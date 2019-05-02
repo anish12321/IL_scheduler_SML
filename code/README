@@ -1,0 +1,7 @@
+# First, set phase to "training" and run main.py as 'python main.py'
+# It will generate models in the current working directory
+
+# Then set the phase to "testing" and the script will use the generated models 
+# to test the training accuracy of the model
+# It will generate CSV files containing training accuracies
+
