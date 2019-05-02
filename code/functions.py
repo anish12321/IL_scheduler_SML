@@ -36,7 +36,6 @@ class ApplicationEnv:
         self.chooseApp = chooseApp
         self. chooseSched = chooseSched
         
-        # Total of columns: 9
         self.col_name_lst = ["timestamps", "min_exec_time", "max_exec_time", "mean_exec_time", "median_exec_time",
                              "var_exec_time", "downward_depth", "relative_job_id", 
                              "PE_0_free", "PE_1_free", "PE_2_free", "PE_3_free", "PE_4_free", "PE_5_free", "PE_6_free",
@@ -157,8 +156,6 @@ class ApplicationEnv:
                 cluster_labels[label_idx] = 4
             elif labels[label_idx] == 14 or labels[label_idx] == 15 :
                 cluster_labels[label_idx] = 5
-            elif labels[label_idx] == 16 :
-                cluster_labels[label_idx] = 6
             else:
                 raise Exception ('Unexpected label')
                 
